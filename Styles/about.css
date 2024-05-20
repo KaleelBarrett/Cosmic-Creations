@@ -1,0 +1,35 @@
+#about {
+    display: flex;
+    flex-direction: row; /* Display children side by side */
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
+    text-align: center; /* Center align text */
+    height: 600px;
+    width: auto;
+}
+
+.about-section, .founder-section {
+    flex: 1;
+    max-width: 45%; /* Adjust the max-width as needed */
+}
+
+.about-section {
+    text-align: left; /* Align text to left within the about section */
+}
+
+.founder-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+    text-align: center; /* Center align text within the founder section */
+}
+
+.founder-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.founder-section h2, .founder-section button {
+    margin-top: 10px; /* Add margin to the top of h2 and button */
+}

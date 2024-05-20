@@ -1,0 +1,35 @@
+#Services {
+    text-align: center;
+    padding: 20px;
+}
+
+.service {
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: 200px; /* Adjust width as needed */
+}
+
+.service img {
+    background-color: #f0f0f0; /* Gray background color */
+    border-radius: 50%; /* Make it circular */
+    width: 100px; /* Adjust size of service icon */
+    height: auto;
+}
+
+.service h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.service p {
+    margin: 0;
+}
+
+
+.center-button {
+    text-align: center;
+    margin-top: 0px; /* Adjust this value as needed */
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+}

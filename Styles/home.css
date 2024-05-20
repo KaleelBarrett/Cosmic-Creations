@@ -1,0 +1,42 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center align vertically */
+    align-items: center; /* Center align horizontally */
+    text-align: center; /* Center align text */
+    height: 800px;
+    width: auto;
+}
+
+#home .cen {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center align items horizontally */
+}
+
+#home .cen img {
+    margin-bottom: 10px; /* Add margin below the images */
+}
+
+#home h1 {
+    color: blue;
+}
+
+#home p {
+    margin: 20px 0; 
+    
+}
+
+#home button {
+    width: 150px;
+    height: 75px;
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    border-radius: 50px; 
+}
+
