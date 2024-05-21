@@ -3,7 +3,7 @@
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-    background-color: red;
+    background-color: #CDE8E5;
 }
 
 .text-section h1 {
@@ -30,13 +30,13 @@
 }
 
 .butt1 {
-    background-color: #4CAF50;
+    background-color: #7AB2B2;
     color: white;
     font-family: "Poppins", sans-serif;
 }
 
 .butt2 {
-    background-color: #008CBA;
+    background-color: #4D869C;
     color: white;
     margin-left: 10px; /* Adjust the margin as needed */
     font-family: "Poppins", sans-serif;

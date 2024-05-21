@@ -19,7 +19,7 @@
 }
 
 #home h1 {
-    color: blue;
+    color: #4D869C;
 }
 
 #home p {
@@ -30,7 +30,7 @@
 #home button {
     width: 150px;
     height: 75px;
-    background-color: red;
+    background-color: #7AB2B2;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;

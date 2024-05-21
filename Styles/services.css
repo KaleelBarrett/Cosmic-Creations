@@ -7,13 +7,13 @@
     padding: 20px;
     margin: 20px;
     display: inline-block;
-    width: 200px; /* Adjust width as needed */
+    width: 400px; 
 }
 
 .service img {
-    background-color: #f0f0f0; /* Gray background color */
-    border-radius: 50%; /* Make it circular */
-    width: 100px; /* Adjust size of service icon */
+    background-color: #f0f0f0; 
+    border-radius: 50%; 
+    width: 100px; 
     height: auto;
 }
 
@@ -24,12 +24,13 @@
 
 .service p {
     margin: 0;
+    font-size: 20px;
 }
 
 
 .center-button {
     text-align: center;
-    margin-top: 0px; /* Adjust this value as needed */
+    margin-top: 0px; 
     margin-bottom: 10px;
     font-family: "Poppins", sans-serif;
 }
