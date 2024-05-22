@@ -6,7 +6,7 @@ header {
 }
 
 header img {
-    height: 150px;
+    height: 200px;
     width: auto;
 }
 
@@ -87,7 +87,7 @@ header button {
     }
     
     header img {
-        height: 70px;
+        height: 100px;
         width: auto;
     }
     
