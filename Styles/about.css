@@ -31,5 +31,36 @@
 }
 
 .founder-section h2, .founder-section button {
-    margin-top: 10px; /* Add margin to the top of h2 and button */
+    margin-top: 10px; 
+}
+
+@media screen and (max-width: 600px) {
+    #about {
+        flex-direction: column; 
+        height: 700px;
+        width: auto;
+    }
+    
+    .about-section, .founder-section {
+        flex: 1;
+        max-width: 100%; 
+    }
+    
+    .about-section {
+        text-align: center; 
+    }
+    
+    .founder-section {
+        display: inline;
+    }
+    
+    .founder-section img {
+        width: 200px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .founder-section h2, .founder-section button {
+        margin-top: 0px; 
+    }
 }

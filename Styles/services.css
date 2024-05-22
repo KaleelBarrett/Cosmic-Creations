@@ -34,3 +34,35 @@
     margin-bottom: 10px;
     font-family: "Poppins", sans-serif;
 }
+
+@media screen and (max-width: 600px) {
+    #Services {
+        padding: 10px; /* Adjust padding */
+    }
+
+    .service {
+        width: 175px; /* Adjust width */
+        margin: 10px auto; /* Center align and adjust margin */
+    }
+
+    .service img {
+        width: 80px; /* Adjust image width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .service h3 {
+        margin-top: 8px; /* Adjust top margin */
+        margin-bottom: 3px; /* Adjust bottom margin */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .service p {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .center-button {
+        margin-top: 0; /* Reset top margin */
+        margin-bottom: 8px; /* Adjust bottom margin */
+        font-size: 14px; /* Adjust font size */
+    }
+}

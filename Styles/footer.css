@@ -54,3 +54,43 @@ footer {
     margin-top: 20px;
     font-size: 14px;
 }
+
+@media screen and (max-width: 600px) {
+    .footer-container {
+        flex-direction: column; /* Change to column layout for small screens */
+        align-items: center; /* Center align items */
+    }
+
+    .footer-left,
+    .footer-right {
+        flex: 1; /* Each section takes full width */
+        padding: 0; /* Remove horizontal padding */
+        text-align: center; /* Center align text */
+        margin-bottom: 20px; /* Add margin between sections */
+    }
+
+    .footer-left h2,
+    .footer-middle h2,
+    .footer-right h2 {
+        border-bottom: none; /* Remove border */
+        padding-bottom: 0; /* Remove padding */
+    }
+
+    .footer-left p,
+    .footer-right .social-icons {
+        margin-top: 10px; /* Reduce top margin */
+    }
+
+    .social-icons a {
+        margin: 0 5px; /* Reduce margin between icons */
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .social-icons img {
+        height: 60px; /* Adjust image height */
+    }
+
+    .footer-bottom {
+        font-size: 12px; /* Adjust font size */
+    }
+}

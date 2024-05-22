@@ -5,12 +5,8 @@ body {
     color: #1F1717;
 }
 
-#background-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    object-fit: cover;
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 10px;
+    } 
 }

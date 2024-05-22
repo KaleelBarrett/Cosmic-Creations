@@ -37,3 +37,27 @@ button {
     cursor: pointer;
     font-family: "Poppins", sans-serif;
 }
+
+@media screen and (max-width: 600px) {
+    #projects {
+        padding: 10px; /* Adjust padding */
+    }
+    
+    .project-container {
+        flex-direction: column; /* Change to a column layout */
+        gap: 15px; /* Adjust the gap between items */
+    }
+    
+    .project-item {
+        gap: 5px; /* Adjust the gap between elements */
+    }
+    
+    .project-item a img {
+        width: 150px; /* Adjust image width */
+    }
+    
+    button {
+        padding: 8px 16px; /* Adjust button padding */
+        font-size: 12px; /* Adjust button font size */
+    }
+}

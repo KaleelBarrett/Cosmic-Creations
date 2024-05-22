@@ -41,3 +41,35 @@
     margin-left: 10px; /* Adjust the margin as needed */
     font-family: "Poppins", sans-serif;
 }
+
+@media screen and (max-width: 600px) {
+    #boader {
+        border-radius: 0; /* Remove border-radius */
+        padding: 10px; /* Reduce padding */
+        background-color: #CDE8E5;
+    }
+
+    .text-section h1 {
+        font-size: 20px; /* Decrease font size */
+        margin-bottom: 5px; /* Reduce bottom margin */
+    }
+
+    .text-section h2 {
+        font-size: 16px; /* Decrease font size */
+        margin-bottom: 10px; /* Reduce bottom margin */
+    }
+
+    .button-section {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center align buttons */
+    }
+
+    .butt1, .butt2 {
+        width: 100%; /* Make buttons full width */
+        margin-bottom: 10px; /* Add space between buttons */
+    }
+
+    .butt2 {
+        margin-left: 0; /* Reset margin */
+    }
+}

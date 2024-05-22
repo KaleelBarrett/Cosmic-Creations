@@ -40,3 +40,27 @@
     border-radius: 50px; 
 }
 
+@media screen and (max-width: 600px) {
+
+    #home {
+        height: 400px;
+        width: auto;
+    }
+
+    .earth {
+        height: 100px;
+        width: auto;
+    }
+    
+    .rocket {
+        height: 100px;
+        width: auto;
+    }
+    
+    
+    #home button {
+        width: 75;
+        height: 45px;
+    }
+
+}
