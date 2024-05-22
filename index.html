@@ -6,8 +6,9 @@
     <title>Cosmic Creations - Landing Page </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        </style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/630bc57373.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Styles/body.css">
     <link rel="stylesheet" href="Styles/header.css">
     <link rel="stylesheet" href="Styles/home.css">
@@ -18,28 +19,16 @@
     <link rel="stylesheet" href="Styles/footer.css">
 </head>
 <body>
-    <!-- <video autoplay loop muted playsinline id="background-video">
-        <source src="Media/alb_space2002_1080p.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video> -->
     <header>
-        <img src="Media/Artboard 5.png" alt="Logo">
+        <a href="#home"><img src="Media/Artboard 5.png" alt="Logo"></a>
         <div class="cir">
-            <a class="home" href="#home" data-label="Home">
-                <img src="Media/home-svgrepo-com.svg" alt="Home">
-            </a>
-            <a class="about" href="#about" data-label="About">
-                <img src="Media/about-description-help-svgrepo-com.svg" alt="About">
-            </a>
-            <a class="project" href="#projects" data-label="Projects">
-                <img src="Media/projects-svgrepo-com.svg" alt="Projects">
-            </a>
-            <a class="services" href="#Services" data-label="Services">
-                <img src="Media/services-svgrepo-com.svg" alt="Services">
-            </a>
+            <a href="#home" data-label="Home" aria-label="Home"><i class="fas fa-home"></i><span class="label">Home</span></a>
+            <a href="#about" data-label="About" aria-label="About"><i class="fas fa-info-circle"></i><span class="label">About</span></a>
+            <a href="#project" data-label="Projects" aria-label="Projects"><i class="fas fa-briefcase"></i><span class="label">Projects</span></a>
+            <a href="#services" data-label="Services" aria-label="Services"><i class="fas fa-cog"></i><span class="label">Services</span></a>      
         </div>
         <a href="#footer-container"><button>Contact</button></a>
-    </header>
+    </header>    
 
     <div id="home">
         <div class="cen">
@@ -127,9 +116,6 @@
     <div class="center-button">
         <a href="https://docs.google.com/presentation/d/1Y6VSXCP8P31hsh83uwNC4BFbQ67qRAeJzsM2em5KAhQ/edit?usp=sharing"><button>More info</button></a>
     </div>
-    
-    
-    
 
     <footer>
         <div class="footer-container">
@@ -141,11 +127,24 @@
             <div class="footer-right">
                 <h2>Connect With Us</h2>
                 <div class="social-icons">
-                    <a href="#"><img src="Media/facebook-svgrepo-com.svg" alt="Facebook"></a>
-                    <a href="#"><img src="Media/twitter-svgrepo-com.svg" alt="Twitter"></a>
-                    <a href="#"><img src="Media/instagram-167-svgrepo-com.svg" alt="Instagram"></a>
-                    <a href="#"><img src="Media/linkedin-svgrepo-com.svg" alt="LinkedIn"></a>
-                </div>                
+                    <a href="https://www.instagram.com" aria-label="Instagram"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a href="https://twitter.com" aria-label="Twitter"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=123456789"
+                      aria-label="WhatsApp"
+                      ><i class="fab fa-whatsapp"></i
+                    ></a>
+                    <a href="https://www.youtube.com" aria-label="YouTube"
+                      ><i class="fab fa-youtube"></i
+                    ></a>
+                    <a href="https://www.facebook.com" aria-label="Facebook"
+                      ><i class="fab fa-facebook"></i
+                    ></a>
+                  </div>                
             </div>
         </div>
         <div class="footer-bottom">

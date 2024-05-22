@@ -15,7 +15,7 @@ header img {
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 9999; /* Ensure it's on top of other content */
+    z-index: 9999;
 }
 
 header .cir {
@@ -28,7 +28,7 @@ header .cir {
     height: 50px;
     border-radius: 50px;
     padding: 5px;
-    transition: width 0.3s ease; /* Smooth transition for width */
+    transition: width 0.3s ease;
 }
 
 header .cir a {
@@ -38,11 +38,11 @@ header .cir a {
     justify-content: center;
     width: 50px;
     height: 50px;
-    position: relative; /* Add this for positioning the label */
+    position: relative;
     text-decoration: none;
 }
 
-header .cir a img {
+header .cir a i {
     height: 30px;
     width: auto;
 }
@@ -58,7 +58,7 @@ header .cir .label {
     transition: opacity 0.3s ease, margin-top 0.3s ease;
     white-space: nowrap;
     position: absolute;
-    top: 100%; /* Position it below the icon */
+    top: 100%;
     text-align: center;
     font-size: 16px;
     font-family: "Poppins", sans-serif;
@@ -69,21 +69,15 @@ header .cir:hover {
     width: 400px;
 }
 
-header .home:hover, .about:hover, .project:hover, .services:hover {
-    background-color: #EEF7FF;
-    border-radius: 50%;
-}
-
 header button {
     width: 100px;
     height: 50px;
     background-color: #7AB2B2;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
-    border-radius: 50px;
     font-size: 12px;
 }
 
@@ -98,38 +92,37 @@ header button {
     }
     
     .cir {
-        position: fixed;
         top: 30%;
         left: 100%;
     }
     
     header .cir {
-        gap: 1px;
+        gap: 0px;
         width: auto;
         height: auto;
         flex-direction: column;
-        border-radius: 0%; /* Remove border-radius */
+        border-radius: 0;
         padding: 0;
         justify-content: center;
-        background-color: transparent; 
+        background-color: transparent;
     }
     
     header .cir a {
         width: 50px;
         height: 50px;
         display: table-row;
-        position: relative; /* Position the label relative to the anchor */
+        position: relative;
     }
     
-    header .cir a img {
-        height: 20px;
+    header .cir a i {
+        height: 30px;
         width: auto;
         color: #4D869C;
     }
     
     header .cir a:hover .label {
         opacity: 1;
-        margin-right: 5px; /* Adjust margin to create space between label and image */
+        margin-right: 5px;
     }
     
     header .cir .label {
@@ -138,28 +131,23 @@ header button {
         transition: opacity 0.3s ease, margin-top 0.3s ease;
         white-space: nowrap;
         position: absolute;
-        top: 50%; /* Position label at the vertical center */
-        right: calc(100% + 10px); /* Position label to the left of the anchor */
-        transform: translateY(-50%); /* Center label vertically */
+        top: 50%;
+        right: calc(100% + 10px);
+        transform: translateY(-50%);
         text-align: center;
-        font-size: 16px;
+        font-size: 10px;
         font-family: "Poppins", sans-serif;
-        color: black; /* Set label text color */
+        color: black;
     }
     
     header .cir:hover {
         width: 0;
     }
     
-    header .home:hover, .about:hover, .project:hover, .services:hover {
-        background-color: transparent; /* Remove background color */
-        border-radius: 0%;
-    }
-    
     header button {
         width: 60px;
-        height: 40px;
-        font-size: 8px;
-        align-items: center;
+        height: 25px;
+        padding: 10px 20px;
+        font-size: 6px;
     }
 }
