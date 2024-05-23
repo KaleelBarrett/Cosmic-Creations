@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cosmic Creations - Landing Page </title>
+    <title>Cosmic Creations - Landing Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan+SC&display=swap');
     </style>
     <script src="https://kit.fontawesome.com/630bc57373.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Styles/body.css">
@@ -24,10 +24,10 @@
         <div class="cir">
             <a href="#home" data-label="Home" aria-label="Home"><i class="fas fa-home"></i><span class="label">Home</span></a>
             <a href="#about" data-label="About" aria-label="About"><i class="fas fa-info-circle"></i><span class="label">About</span></a>
-            <a href="#project" data-label="Projects" aria-label="Projects"><i class="fas fa-briefcase"></i><span class="label">Projects</span></a>
-            <a href="#services" data-label="Services" aria-label="Services"><i class="fas fa-cog"></i><span class="label">Services</span></a>      
+            <a href="#projects" data-label="Projects" aria-label="Projects"><i class="fas fa-briefcase"></i><span class="label">Projects</span></a>
+            <a href="#Services" data-label="Services" aria-label="Services"><i class="fas fa-cog"></i><span class="label">Services</span></a>      
         </div>
-        <a href="#footer-container"><button>Contact</button></a>
+        <a href="#footer"><button>Contact</button></a>
     </header>    
 
     <div id="home">
@@ -38,7 +38,7 @@
         </div>
         <p>Welcome to Cosmic Creation – your gateway to exceptional digital design and development!
             <br>Ready to shape the cosmos with us? 🌌✨</p>
-            <a href="#footer-container"><button>Contact</button></a>
+            <a href="#footer"><button>Contact</button></a>
     </div>
 
     <div id="about">
@@ -67,12 +67,12 @@
         </div>
         <div class="button-section">
             <a href="https://forms.gle/gCi7erae6rpg7Ai47"><button class="butt1">Get Started</button></a>
-            <a href="#footer-container"><button class="butt2">Contact Us</button></a>
+            <a href="#footer"><button class="butt2">Contact Us</button></a>
         </div>
     </div>
     
     <div id="projects">
-    <h1>Projects </h1>
+        <h1>Projects</h1>
         <div class="project-container">
             <div class="project-item">
                 <a href=""><img src="Media/folder.jpg" alt="Project 1"></a>
@@ -117,7 +117,7 @@
         <a href="https://docs.google.com/presentation/d/1Y6VSXCP8P31hsh83uwNC4BFbQ67qRAeJzsM2em5KAhQ/edit?usp=sharing"><button>More info</button></a>
     </div>
 
-    <footer>
+    <footer id="footer">
         <div class="footer-container">
             <div class="footer-left">
                 <h2>Contact Us</h2>
@@ -127,30 +127,28 @@
             <div class="footer-right">
                 <h2>Connect With Us</h2>
                 <div class="social-icons">
-                    <a href="https://www.instagram.com" aria-label="Instagram"
-                      ><i class="fab fa-instagram"></i
-                    ></a>
-                    <a href="https://twitter.com" aria-label="Twitter"
-                      ><i class="fab fa-twitter"></i
-                    ></a>
-                    <a
-                      href="https://api.whatsapp.com/send?phone=123456789"
-                      aria-label="WhatsApp"
-                      ><i class="fab fa-whatsapp"></i
-                    ></a>
-                    <a href="https://www.youtube.com" aria-label="YouTube"
-                      ><i class="fab fa-youtube"></i
-                    ></a>
-                    <a href="https://www.facebook.com" aria-label="Facebook"
-                      ><i class="fab fa-facebook"></i
-                    ></a>
-                  </div>                
+                    <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=123456789" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.youtube.com" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                </div>                
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2024 Cosmic Creations. All rights reserved.</p>
         </div>
     </footer> 
-    <script src="scripts/cir.js"></script> 
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script src="scripts/cir.js"></script>
 </body>  
 </html>
