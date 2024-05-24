@@ -1,8 +1,13 @@
 body {
-    background-color: #EEF7FF;
     font-family: "Poppins", sans-serif;
     font-size: 24px;
-    color: #1F1717;
+    color: whitesmoke;
+    background-image: url('../Media/spaceship-orbits-dark-galaxy-glowing-blue-comet-generated-by-ai.jpg'); /* Replace with the path to your image */
+    background-size: contain; /* Ensure the background covers the entire viewport */
+    background-position: center; /* Center the background image */
+    height: auto; /* Set height to auto so that it expands to contain content */
+    margin: 0; /* Remove default margin */
+    height: 100vh;
 }
 
 #bg-video {

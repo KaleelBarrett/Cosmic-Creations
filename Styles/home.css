@@ -6,13 +6,17 @@
     text-align: center; /* Center align text */
     height: 800px;
     width: auto;
-    margin-top: 100px;
+    margin-top: 150px;
+    
 }
 
 #home h1 {
     color: #4D869C;
-    font-family: "Sedan SC", serif;
+     font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
     margin-left: 15px;
+    font-size: 100px;
 }
 
 #home p {

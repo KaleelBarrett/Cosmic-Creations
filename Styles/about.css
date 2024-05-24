@@ -6,6 +6,9 @@
     text-align: center; /* Center align text */
     height: 600px;
     width: auto;
+    background-color: black;
+    border-radius: 50px;
+    
 }
 
 .about-section, .founder-section {
