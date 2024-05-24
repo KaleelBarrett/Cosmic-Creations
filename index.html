@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmic Creations - Landing Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan+SC&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan+SC&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan+SC&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/630bc57373.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Styles/body.css">
     <link rel="stylesheet" href="Styles/header.css">
@@ -17,25 +19,25 @@
     <link rel="stylesheet" href="Styles/projects.css">
     <link rel="stylesheet" href="Styles/services.css">
     <link rel="stylesheet" href="Styles/footer.css">
+    <link rel="stylesheet" href="Styles/loadingscreen.css">
 </head>
 <body>
     <header>
         <a href="#home"><img src="Media/Artboard 4.png" alt="Logo"></a>
-        <div class="cir">
-            <a href="#home" data-label="Home" aria-label="Home"><i class="fas fa-home"></i><span class="label">Home</span></a>
-            <a href="#about" data-label="About" aria-label="About"><i class="fas fa-info-circle"></i><span class="label">About</span></a>
-            <a href="#projects" data-label="Projects" aria-label="Projects"><i class="fas fa-briefcase"></i><span class="label">Projects</span></a>
-            <a href="#Services" data-label="Services" aria-label="Services"><i class="fas fa-cog"></i><span class="label">Services</span></a>      
+        <div class="cir-container">
+            <div class="cir">
+                <a href="#home" data-label="Home" aria-label="Home"><i class="fas fa-home"></i><span class="label">Home</span></a>
+                <a href="#about" data-label="About" aria-label="About"><i class="fas fa-info-circle"></i><span class="label">About</span></a>
+                <a href="#projects" data-label="Projects" aria-label="Projects"><i class="fas fa-briefcase"></i><span class="label">Projects</span></a>
+                <a href="#Services" data-label="Services" aria-label="Services"><i class="fas fa-cog"></i><span class="label">Services</span></a>
+            </div>
         </div>
         <a href="#footer"><button>Contact</button></a>
-    </header>    
+    </header>
+     
 
     <div id="home">
-        <div class="cen">
-            <img class="earth" src="Media/earth.png" alt="">
-            <h1>Bringing <br> Your <br> Ideas to <br> Life </h1>
-            <img class="rocket" src="Media/rocket.png" alt="">
-        </div>
+        <h1>Bringing Your <br> Ideas to Life </h1>
         <p>Welcome to Cosmic Creation – your gateway to exceptional digital design and development!
             <br>Ready to shape the cosmos with us? 🌌✨</p>
             <a href="#footer"><button>Contact</button></a>
@@ -139,16 +141,9 @@
             <p>&copy; 2024 Cosmic Creations. All rights reserved.</p>
         </div>
     </footer> 
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/scrollani.js"></script>
     <script src="scripts/cir.js"></script>
+    <script src="scripts/loading.js"></script>
 </body>  
 </html>

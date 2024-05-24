@@ -3,19 +3,24 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 6px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999; /* Adjust the z-index as needed */
 }
 
 header img {
-    height: 200px;
+    height: 100px;
     width: auto;
 }
 
 .cir {
-    position: fixed;
-    top: 10%;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 9999;
+    z-index: 998; /* Adjust the z-index to be below the header */
 }
 
 header .cir {
@@ -52,6 +57,12 @@ header .cir a:hover .label {
     margin-top: 5px;
 }
 
+header .cir a:hover {
+    background-color: white;
+    border-radius: 50%;
+}
+
+
 header .cir .label {
     opacity: 0;
     margin-top: 0px;
@@ -70,8 +81,6 @@ header .cir:hover {
 }
 
 header button {
-    width: 100px;
-    height: 50px;
     background-color: #7AB2B2;
     border: none;
     padding: 10px 20px;

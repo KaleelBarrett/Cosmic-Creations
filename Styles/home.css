@@ -6,23 +6,7 @@
     text-align: center; /* Center align text */
     height: 800px;
     width: auto;
-    margin-top: -100px;
-}
-
-
-
-#home .cen {
-    display: flex;
-    flex-direction: row;
-    align-items: center; /* Center align items horizontally */
-}
-
-#home .cen img {
-    margin-bottom: 10px; /* Add margin below the images */
-}
-
-.earth {
-    right: 10000px;
+    margin-top: 100px;
 }
 
 #home h1 {
@@ -37,7 +21,7 @@
 
 #home button {
     width: 150px;
-    height: 75px;
+    height: auto;
     background-color: #7AB2B2;
     border: none;
     padding: 10px 20px;
